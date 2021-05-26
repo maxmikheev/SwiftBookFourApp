@@ -13,6 +13,8 @@
 		ABC52665265EA9DF00E25C80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC52663265EA9DF00E25C80 /* Main.storyboard */; };
 		ABC52667265EA9E200E25C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC52666265EA9E200E25C80 /* Assets.xcassets */; };
 		ABC5266A265EA9E200E25C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC52668265EA9E200E25C80 /* LaunchScreen.storyboard */; };
+		ABC52673265EAA8000E25C80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC52672265EAA8000E25C80 /* LoginViewController.swift */; };
+		ABC52676265EAA9700E25C80 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC52675265EAA9700E25C80 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		ABC52666265EA9E200E25C80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABC52669265EA9E200E25C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABC5266B265EA9E200E25C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC52672265EAA8000E25C80 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ABC52675265EAA9700E25C80 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				ABC52666265EA9E200E25C80 /* Assets.xcassets */,
 				ABC52668265EA9E200E25C80 /* LaunchScreen.storyboard */,
 				ABC5266B265EA9E200E25C80 /* Info.plist */,
+				ABC52672265EAA8000E25C80 /* LoginViewController.swift */,
+				ABC52675265EAA9700E25C80 /* WelcomeViewController.swift */,
 			);
 			path = SwiftBookFourApp;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC52673265EAA8000E25C80 /* LoginViewController.swift in Sources */,
+				ABC52676265EAA9700E25C80 /* WelcomeViewController.swift in Sources */,
 				ABC52662265EA9DF00E25C80 /* ViewController.swift in Sources */,
 				ABC5265E265EA9DF00E25C80 /* AppDelegate.swift in Sources */,
 				ABC52660265EA9DF00E25C80 /* SceneDelegate.swift in Sources */,
