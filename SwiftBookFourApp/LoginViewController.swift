@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "logInButton" {
+        if segue.identifier == "bounceName" {
             let textName = userNameField.text
             let newVC = segue.destination as! WelcomeViewController
             newVC.textFromLogin = textName

@@ -13,12 +13,11 @@ class WelcomeViewController: UIViewController {
     @IBAction func logOutButton(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
-    var textFromLogin: String!
+    var textFromLogin:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelField = textFromLogin
+        title = textFromLogin
     }
-
 
 }

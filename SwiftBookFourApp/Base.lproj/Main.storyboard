@@ -37,7 +37,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <action selector="logButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OjK-6X-jKd"/>
+                                    <segue destination="I2Y-Fz-W9Q" kind="show" identifier="bounceName" id="5MK-EZ-f4q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,9 +64,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7C-a3-gel">
-                                <rect key="frame" x="185" y="399" width="73" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUP-Nb-5Hf">
+                                <rect key="frame" x="0.0" y="253" width="415" height="44"/>
+                                <color key="barTintColor" systemColor="systemRedColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" systemColor="systemBackgroundColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="iya-U9-KM0"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7C-a3-gel">
+                                <rect key="frame" x="171" y="380" width="73" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -75,20 +84,19 @@
                                     <action selector="logOutButton:" destination="I2Y-Fz-W9Q" eventType="touchUpInside" id="IOX-jG-dLN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBS-ow-6Dh">
-                                <rect key="frame" x="183" y="248" width="77" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="k5V-2M-fpN"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="k5V-2M-fpN" firstAttribute="bottom" secondItem="N7C-a3-gel" secondAttribute="bottom" constant="395" id="FCm-oL-HCu"/>
+                            <constraint firstItem="N7C-a3-gel" firstAttribute="top" secondItem="VUP-Nb-5Hf" secondAttribute="bottom" constant="83" id="OXa-XQ-Px6"/>
+                            <constraint firstItem="VUP-Nb-5Hf" firstAttribute="leading" secondItem="k5V-2M-fpN" secondAttribute="leading" id="bJI-vw-Xmy"/>
+                            <constraint firstItem="VUP-Nb-5Hf" firstAttribute="centerX" secondItem="N7C-a3-gel" secondAttribute="centerX" id="dcH-3E-3oK"/>
+                            <constraint firstItem="k5V-2M-fpN" firstAttribute="trailing" secondItem="N7C-a3-gel" secondAttribute="trailing" constant="170" id="liX-Jk-q3B"/>
+                            <constraint firstItem="N7C-a3-gel" firstAttribute="leading" secondItem="k5V-2M-fpN" secondAttribute="leading" constant="171" id="vaV-PW-Qml"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="labelField" destination="mBS-ow-6Dh" id="0vN-kd-6BH"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="vXU-ub-I4p"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNx-I7-ToH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
