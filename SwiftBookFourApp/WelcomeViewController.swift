@@ -9,13 +9,15 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var labelField: UILabel!
     @IBAction func logOutButton(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
+    var textFromLogin: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        labelField = textFromLogin
     }
 
 

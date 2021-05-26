@@ -9,11 +9,23 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var userNameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
-    @IBAction func logButton(_ sender: Any) {
-        let newVc = storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController")
-        navigationController?.pushViewController(newVc!, animated: true)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "logInButton" {
+            let textName = userNameField.text
+            let newVC = segue.destination as! WelcomeViewController
+            newVC.textFromLogin = textName
+        }
     }
+
+//    @IBAction func logButton(_ sender: Any) {
+//        let newVc = storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
+//        let textName = userNameField.text
+//        newVc.textFromLogin = textName
+//        navigationController?.pushViewController(newVc, animated: true)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
